@@ -21,6 +21,20 @@
             font-weight: bold;
         }
     </style>
+    <script>
+    var konamiCode = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+    var konamiIndex = 0;
+    document.addEventListener('keydown', function(e) {
+        if (e.key === konamiCode[konamiIndex++]) {
+            if (konamiIndex === konamiCode.length) {
+                window.location.href = 'https://doublepenne.com';
+                konamiIndex = 0;
+            }
+        } else {
+            konamiIndex = 0;
+        }
+    });
+    </script>
 </head>
 <body>
     <dotlottie-player src="https://lottie.host/95785f1b-5a37-4ec5-945a-a00f85032478/TmPkyyjm2k.lottie" 
