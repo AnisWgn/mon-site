@@ -26,9 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function updateButtonText(theme) {
         // Update the button text based on the current theme
         const themeIcons = {
-            light: "",
-            dark: "",
-            orange: "",
+            light: "🌞",
+            dark: "🌚",
+            orange: "😼"
         };
         modeBtn.textContent = `Mode ${themeIcons[theme]}`;
     }
