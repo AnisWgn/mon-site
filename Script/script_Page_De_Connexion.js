@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Navigation event listeners
     const navigationButtons = [
-        { id: "home-btn", url: "Home.html" },
+        { id: "home-btn", url: "index.html" },
         { id: "hub-btn", url: "Hub.html" },
         { id: "faq-btn", url: "FAQ.html" },
         { id: "contact-btn", url: "Contact.html" },
