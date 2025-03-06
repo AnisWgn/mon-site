@@ -34,6 +34,18 @@
             konamiIndex = 0;
         }
     });
+    var konamiCode2 = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','b'];
+    var konamiIndex2 = 0;
+    document.addEventListener('keydown', function(e) {
+        if (e.key === konamiCode2[konamiIndex2++]) {
+            if (konamiIndex2 === konamiCode2.length) {
+                window.location.href = 'https://onlyfan.com';
+                konamiIndex = 0;
+            }
+        } else {
+            konamiIndex = 0;
+        }
+    });
     </script>
 </head>
 <body>
