@@ -11,7 +11,7 @@
     --header-page-text-color: #000;
     --header-page-hover-box-shadow: #3600f7;
     --mode-bg-color: #f1f1f1;
-    --mode-border: 2px solid #100048;
+    --mode-border: 2px solid #3600f7;
     --mode-hover-border: 2px solid #007BFF;
     --header-main-page-text-color:#3600f7;
     --header-main-page-hover-box-shadow: #3600f7;
@@ -111,14 +111,12 @@ header {
 }
 
 .logo {
-    background-color: white;
-    border: solid black 2px;
+    width: 170px;
+    height: 60px;
     padding: 5px;
+    display: inline-block;
     transition: box-shadow 0.3s ease-in-out;
     opacity: 1; /* Empêche toute réduction d'opacité */
-    display: block; /* Assure que l'image est traitée comme un bloc */
-    max-width: 100%; /* Empêche l'image de dépasser son conteneur */
-    height: auto; /* Maintient le ratio de l'image */
 }
 
 .header-main-page {
@@ -296,9 +294,4 @@ html {
 
 .mode:hover{
     border : var(--mode-hover-border);
-}
-
-a{
-    text-decoration: none;
-    
 }

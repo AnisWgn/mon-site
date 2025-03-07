@@ -36,22 +36,22 @@ document.addEventListener("DOMContentLoaded", function () {
     // Existing event listeners for navigation
     const home = document.getElementById("home-btn");
     home.addEventListener("click", () => {
-        window.location.href = "Home.html";
+        window.location.href = "home.html";
     });
 
     const hub = document.getElementById("hub-btn");
     hub.addEventListener("click", () => {
-        window.location.href = "Hub.html";
+        window.location.href = "index.html";
     });
 
     const faq = document.getElementById("faq-btn");
     faq.addEventListener("click", () => {
-        window.location.href = "FAQ.html";
+        window.location.href = "question_fréquente.html";
     });
 
     const contact = document.getElementById("contact-btn");
     contact.addEventListener("click", () => {
-        window.location.href = "Contact.html";
+        window.location.href = "contact.html";
     });
 
     const connexion = document.getElementById("connexion-btn");
@@ -61,11 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const inscription = document.getElementById("inscription-btn");
     inscription.addEventListener("click", () => {
-        window.location.href = "Page_Inscription.html";
+        window.location.href = "Page_De_Inscription.html";
     });
 });
 
 const motdepasse = document.getElementById("forgot-password");
 motdepasse.addEventListener("click", () => {
-    window.location.href = "Mot_de_Passe_oublié.html";
+    window.location.href = "Mot_De_Passe_Oublié.html";
 });

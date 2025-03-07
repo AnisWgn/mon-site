@@ -17,7 +17,7 @@
     --header-main-page-hover-box-shadow: #3600f7;
     --login-btn-bg-color: #007BFF;
     --login-btn-hover-bg-color: #0056b3;
-    --register-btn-hover-bg-color: #3600f7;
+    --register-btn-hover-bg-color: rgba(0, 0, 0 , 0.6);
     --register-btn-hover-text-color: #f1f1f1;
     --forgot-password-text-color: #3600f7;
 }

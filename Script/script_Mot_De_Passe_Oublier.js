@@ -36,39 +36,36 @@ document.addEventListener("DOMContentLoaded", function () {
     // Existing event listeners for navigation
     const home = document.getElementById("home-btn");
     home.addEventListener("click", () => {
-        window.location.href = "Home.html";
+        window.location.href = "home.html";
     });
 
     const hub = document.getElementById("hub-btn");
     hub.addEventListener("click", () => {
-        window.location.href = "Hub.html";
+        window.location.href = "index.html";
     });
 
     const faq = document.getElementById("faq-btn");
     faq.addEventListener("click", () => {
-        window.location.href = "FAQ.html";
+        window.location.href = "question_fréquente.html";
     });
 
     const contact = document.getElementById("contact-btn");
     contact.addEventListener("click", () => {
-        window.location.href = "Contact.html";
+        window.location.href = "contact.html";
     });
 
-    const connection = document.getElementById("connection-btn");
-    connection.addEventListener("click", () => {
-        const filePath = "file:///C:/Users/p2k77/OneDrive/Documents/App_Cv/Script/Page_De_Connection/Page_De_Connection.html";
-        window.open(filePath, "_blank");
+    const connexion = document.getElementById("connexion-btn");
+    connexion.addEventListener("click", () => {
+        window.location.href = "Page_De_Connexion.html";
     });
 
     const inscription = document.getElementById("inscription-btn");
     inscription.addEventListener("click", () => {
-        window.location.href = "file:///C:/Users/p2k77/OneDrive/Documents/App_Cv/Script/Page_De_Connexion";
-        window.open("filepath", "_blank");
+        window.location.href = "Page_De_Inscription.html";
     });
+});
 
-    const motdepasse = document.getElementById("forgot-password");
-    motdepasse.addEventListener("click", () => {
-        window.location.href = "Mot_de_Passe_oublié.html";
-    });
-
+const motdepasse = document.getElementById("forgot-password");
+motdepasse.addEventListener("click", () => {
+    window.location.href = "Mot_De_Passe_Oublié.html";
 });
