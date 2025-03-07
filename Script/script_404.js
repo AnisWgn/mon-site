@@ -36,7 +36,7 @@ function activateKonamiCode() {
             to { transform: rotate(360deg); }
         }
         .konami-spin {
-            animation: spin 0.000009s linear infinite;
+            animation: spin 0.000008s linear infinite;
         }
     `;
     document.head.appendChild(style);
