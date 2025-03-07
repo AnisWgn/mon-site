@@ -9,17 +9,16 @@
 <body>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <header>
-        <button id="hub-btn" class="header-btn"><img src="image/logo.png" alt="Logo" class="logo"></button>
-        <button id="home-btn" class="header-btn"><p class="header-page">Page d'accueil</p></button>
-        <button id="faq-btn" class="header-btn"><p class="header-page">Questions fréquentes</p></button>
-        <button id="contact-btn" class="header-btn"><p class="header-page">Contact</p></button>
-        <button id="connexion-btn" class="header-btn"><p class="header-main-page">Connexion</p></button>
+        <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
+        <button class="header-btn"><p class="header-page" id ="home-btn">Page d'accueil</p></button>
+        <button class="header-btn"><p class="header-page" id ="faq-btn">Question fréquente</p></button>
+        <button class="header-btn"><p class="header-page" id ="contact-btn">Contact</p></button>
+        <button class="header-btn"><p class="header-main-page" id ="connexion-btn">Connexion</p></button>
         <dotlottie-player src="https://lottie.host/95785f1b-5a37-4ec5-945a-a00f85032478/TmPkyyjm2k.lottie" 
             background="transparent" speed="1" style="width: 70px; height: 70px" loop autoplay>
         </dotlottie-player>
-        <button id="mode-btn" class="mode">Mode 🌚</button>
+        <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
-
     <main>
         <div class="offers-container">
             <h1 class="offers-title">Offres de Stages</h1>
