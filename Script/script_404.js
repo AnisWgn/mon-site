@@ -23,7 +23,7 @@ function activateKonamiCode() {
     isSpinning = true;
 
     // Create and play audio
-    audio = new Audio("Music/Gas_Gas_Gas.mp3");
+    audio = new Audio('Music/Gas_Gas_Gas.mp3')
     audio.loop = true;
     audio.volume = 1;
     audio.play();
