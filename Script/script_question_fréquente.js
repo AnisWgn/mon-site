@@ -34,38 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Existing event listeners for navigation
-    const home = document.getElementById("home-btn");
-    home.addEventListener("click", () => {
-        window.location.href = "home.html";
-    });
-
-    const hub = document.getElementById("hub-btn");
-    hub.addEventListener("click", () => {
-        window.location.href = "index.html";
-    });
-
-    const faq = document.getElementById("faq-btn");
-    faq.addEventListener("click", () => {
-        window.location.href = "question_fréquente.html";
-    });
-
-    const contact = document.getElementById("contact-btn");
-    contact.addEventListener("click", () => {
-        window.location.href = "contact.html";
-    });
-
-    const connexion = document.getElementById("connexion-btn");
-    connexion.addEventListener("click", () => {
-        window.location.href = "Page_De_Connexion.html";
-    });
-
-    const inscription = document.getElementById("inscription-btn");
-    inscription.addEventListener("click", () => {
-        window.location.href = "Page_De_Inscription.html";
-    });
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("home-btn")?.addEventListener("click", () => window.location.href = "home.html");
+        document.getElementById("hub-btn")?.addEventListener("click", () => window.location.href = "index.html");
+        document.getElementById("faq-btn")?.addEventListener("click", () => window.location.href = "question_fréquente.html");
+        document.getElementById("contact-btn")?.addEventListener("click", () => window.location.href = "contact.html");
+        document.getElementById("connexion-btn")?.addEventListener("click", () => window.location.href = "Page_De_Connexion.html");
+        document.getElementById("inscription-btn")?.addEventListener("click", () => window.location.href = "Page_De_Inscription.html");
 });
-
-const motdepasse = document.getElementById("forgot-password");
-motdepasse.addEventListener("click", () => {
-    window.location.href = "Mot_De_Passe_Oublié.html";
+        document.getElementById("forgot-password")?.addEventListener("click", () => window.location.href = "Mot_De_Passe_Oublié.html");
 });
