@@ -17,7 +17,7 @@
     --header-main-page-hover-box-shadow: #3600f7;
     --login-btn-bg-color: #007BFF;
     --login-btn-hover-bg-color: #0056b3;
-    --register-btn-hover-bg-color: #3600f7;
+    --register-btn-hover-bg-color: rgba(0, 0, 0 , 0.6);
     --register-btn-hover-text-color: #f1f1f1;
     --forgot-password-text-color: #3600f7;
 }
@@ -87,25 +87,24 @@ header {
     width: 100%;
     background-color: var(--header-bg-color);
     padding: 3px 3px 3px 5px;
-    display: flex; /* Active Flexbox */
-    align-items: center; /* Aligne verticalement */
-    justify-content: left; /* Répartit les éléments */
+    display: flex;
+    align-items: center;
+    justify-content: left;
     position: relative;
 }
-
 
 .header-btn {
     border: none;
     background-color: transparent;
     cursor: pointer;
     display: flex;
-    align-items: center; /* Aligne le texte et l’image */
-    justify-content: center; /* Centre le texte */
-    width: auto; /* S'adapte au contenu */
-    height: 50px; 
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 50px;
     font-size: 16px;
     padding: 10px 0px 10px 10px;
-    margin: 10px 0px 10px 0px; /* Ajoute un peu d’espace */
+    margin: 10px 0px 10px 0px;
     color: rgb(0, 0, 0);
     text-align: center;
 }
@@ -116,7 +115,7 @@ header {
     padding: 5px;
     display: inline-block;
     transition: box-shadow 0.3s ease-in-out;
-    opacity: 1; /* Empêche toute réduction d'opacité */
+    opacity: 1;
 }
 
 .header-main-page {
@@ -127,7 +126,7 @@ header {
     display: inline-block;
     color: var(--header-main-page-text-color);
     box-shadow: 0px 2px 0px 0px var(--header-main-page-text-color);
-    opacity: 1; /* Empêche toute réduction d'opacité */
+    opacity: 1;
 }
 
 .header-page {
@@ -137,12 +136,11 @@ header {
     padding-bottom: 20px;
     display: inline-block;
     transition: box-shadow 0.5s ease-in-out;
-    opacity: 1; /* Empêche toute réduction d'opacité */
+    opacity: 1;
     color: var(--header-page-text-color)
 }
 
-
-.header-page:hover{
+.header-page:hover {
     box-shadow: 0px 2px 0px 0px var(--header-page-hover-box-shadow);
 }
 
@@ -154,17 +152,16 @@ header {
     padding-bottom: 20px;
     display: inline-block;
     transition: box-shadow 0.5s ease-in-out;
-    opacity: 1; /* Empêche toute réduction d'opacité */
+    opacity: 1;
 }
 
-
-.header2-page:hover{
+.header2-page:hover {
     box-shadow: 0px 2px 0px 0px #3600f7;
 }
 
 /* Contenu principal centré */
 main {
-    flex: 1; /* Permet au footer de rester en bas */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,9 +177,9 @@ main {
     text-align: center;
 }
 
-.register-btn{
+.register-btn {
     width: 100%;
-    margin-top:10px;
+    margin-top: 10px;
     padding: 10px;
     color: var(--register-btn-text-color);
     font-size: 16px;
@@ -196,14 +193,16 @@ main {
     background-color: var(--register-btn-hover-bg-color);
     color: var(--register-btn-hover-text-color);
 }
+
 /* Titres */
 h1 {
     margin-bottom: 20px;
 }
 
 h1:hover {
-    text-decoration: underline ;
+    text-decoration: underline;
 }
+
 /* Formulaire */
 .input-group {
     margin-bottom: 15px;
@@ -266,18 +265,14 @@ footer {
     left: 0;
 }
 
-
-.login-title{
+.login-title {
     padding-bottom: 5px;
 }
 
-
-
 html {
-	background-color: var(--bg-color);
-	color: var(--text-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
-
 
 .mode {
     position: absolute;
@@ -286,12 +281,12 @@ html {
     padding: 10px 10px 10px 10px;
     font-size: 16px;
     background-color: var(--mode-bg-color);
-    color:var(--mode-text-color);
-    border :var(--mode-border);
+    color: var(--mode-text-color);
+    border: var(--mode-border);
     border-radius: 50px;
     cursor: pointer;
 }
 
-.mode:hover{
-    border : var(--mode-hover-border);
+.mode:hover {
+    border: var(--mode-hover-border);
 }

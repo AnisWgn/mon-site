@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const modeBtn = document.getElementById("mode-btn");
     const themes = ["light", "dark", "orange"]; // List of available themes
-    let currentThemeIndex = parseInt(localStorage.getItem('themeIndex')) || 0; // Default to the first theme
+    let currentThemeIndex = localStorage.getItem('themeIndex') || 0; // Default to the first theme
 
     // Set the initial theme
     setTheme(themes[currentThemeIndex]);
@@ -28,12 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const themeIcons = {
             light: "🌞",
             dark: "🌚",
-            orange: "😼"
+            orange: "😼",
         };
         modeBtn.textContent = `Mode ${themeIcons[theme]}`;
     }
 
-<<<<<<< HEAD
     // Existing event listeners for navigation
     const home = document.getElementById("home-btn");
     home.addEventListener("click", () => {
@@ -70,23 +69,3 @@ const motdepasse = document.getElementById("forgot-password");
 motdepasse.addEventListener("click", () => {
     window.location.href = "Mot_De_Passe_Oublié.html";
 });
-=======
-    // Navigation event listeners
-    const navigationButtons = [
-        { id: "home-btn", url: "index.html" },
-        { id: "hub-btn", url: "Hub.html" },
-        { id: "faq-btn", url: "FAQ.html" },
-        { id: "contact-btn", url: "Contact.html" },
-        { id: "connexion-btn", url: "Page_De_Connexion.html" },
-        { id: "inscription-btn", url: "Page_Inscription.html" },
-        { id: "forgot-password", url: "Mot_de_Passe_oublié.html" }
-    ];
-
-    navigationButtons.forEach(({ id, url }) => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.addEventListener("click", () => window.location.href = url);
-        }
-    });
-});
->>>>>>> 16b8a6ba89f35640ca665557a34af7c671f60fd2
