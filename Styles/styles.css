@@ -45,29 +45,6 @@
     --forgot-password-text-color: rgba(138, 43, 226,1);
 }
 
-[data-theme="orange"] {
-    --bg-color: #121212;
-    --text-color: #f1f1f1;
-    --header-bg-color: #1f1f1f;
-    --login-container-bg-color: #1f1f1f;
-    --footer-bg-color: #121212;
-    --login-container-box-shadow: 10px 15px 10px rgba(255,255,255,0.1);
-    --register-btn-text-color: #f1f1f1;
-    --header-page-text-color: #f1f1f1;
-    --header-page-hover-box-shadow: rgb(255,163,26);
-    --mode-bg-color: rgba(255,255,255,0.1);
-    --mode-text-color: #f1f1f1;
-    --mode-border: 2px solid rgb(255,163,26);
-    --mode-hover-border: 2px solid rgba(255,163,26, 0.8);
-    --header-main-page-text-color: rgb(255,163,26);
-    --header-main-page-hover-box-shadow: rgb(255,163,26);
-    --login-btn-bg-color: rgba(255,163,26,0.9);
-    --login-btn-hover-bg-color: rgb(255,163,26);
-    --register-btn-hover-bg-color: rgba(255,255,255,0.1);
-    --register-btn-hover-text-color: #f1f1f1;
-    --forgot-password-text-color: rgb(255,163,26);
-}
-
 .forgot-password a {
     color: var(--forgot-password-text-color);
 }
