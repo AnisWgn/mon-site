@@ -124,11 +124,17 @@
                 if (turnO) {
                     box.innerText = 'O';
                     box.style.color = 'green';
+                    audio = new Audio('Music/click.wav')
+                    audio.volume = 1;
+                    audio.play();
                     turnO = false;
                     box.disabled = true;
                     checkWinner();
                 } else {
                     box.innerText = 'X';
+                    audio = new Audio('Music/click.wav')
+                    audio.volume = 1;
+                    audio.play();
                     box.style.color = 'black';
                     turnO = true;
                     box.disabled = true;
