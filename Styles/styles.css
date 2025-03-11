@@ -5,11 +5,7 @@
     --header-bg-color: rgba(0, 0, 0, 0.7    );
     --login-container-bg-color: #fff;
     --footer-bg-color: #f1f1f1;
-<<<<<<< HEAD
     --login-container-box-shadow: 0px 50px 300px 5px rgba(0,0,0,0.5);
-=======
-    --login-container-box-shadow: 0px 20px 400px 50px black;
->>>>>>> 63cf2c78b4922e1667bff6451587b7cab1b5c995
     --register-btn-text-color: #000;
     --register-btn-bg-color: rgba(0, 0, 0, 0.3);
     --header-page-text-color: white;
@@ -94,11 +90,7 @@ header {
 .logo {
     width: 200px;
     height: 60px;
-<<<<<<< HEAD
     padding: 5px -10px 5px 0px;
-=======
-    padding: 5px 5px 5px 0px;
->>>>>>> 63cf2c78b4922e1667bff6451587b7cab1b5c995
     margin: 0px 10px 0px 0px;
     display: inline-block;
     transition: box-shadow 0.3s ease-in-out;
