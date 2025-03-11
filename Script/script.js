@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const modeBtn = document.getElementById("mode-btn");
-    const themes = ["light", "dark", "orange"]; // List of available themes
+    const themes = ["light", "dark"]; // List of available themes
     let currentThemeIndex = localStorage.getItem('themeIndex') || 0; // Default to the first theme
 
     // Set the initial theme
@@ -28,19 +28,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const themeIcons = {
             light: "🌞",
             dark: "🌚",
-            orange: "😼",
         };
         modeBtn.textContent = `Mode ${themeIcons[theme]}`;
     }
 
     // Existing event listeners for navigation
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("home-btn")?.addEventListener("click", () => window.location.href = "home.html");
-        document.getElementById("hub-btn")?.addEventListener("click", () => window.location.href = "index.html");
-        document.getElementById("faq-btn")?.addEventListener("click", () => window.location.href = "question_fréquente.html");
-        document.getElementById("contact-btn")?.addEventListener("click", () => window.location.href = "contact.html");
-        document.getElementById("connexion-btn")?.addEventListener("click", () => window.location.href = "Page_De_Connexion.html");
-        document.getElementById("inscription-btn")?.addEventListener("click", () => window.location.href = "Page_De_Inscription.html");
-});
-        document.getElementById("forgot-password")?.addEventListener("click", () => window.location.href = "Mot_De_Passe_Oublié.html");
+    const navigationButtons = [
+        { id: "hub-btn", url: "Hub.html" },
+        { id: "home-btn", url: "index.html" },
+        { id: "faq-btn", url: "FAQ.html" },
+        { id: "question-btn", url: "question.html" },
+        { id: "contact-btn", url: "contacte.html" },
+        { id: "connexion-btn", url: "Page_De_Connexion.html" },
+        { id: "inscription-btn", url: "Page_Inscription.html" },
+        { id: "forgot-password", url: "Mot_de_Passe_oublié.html" }
+    ];
+
+    navigationButtons.forEach(({ id, url }) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.addEventListener("click", () => window.location.href = url);
+        }
+    });
 });
