@@ -18,6 +18,24 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+const Code = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'b'];
+let Index = 0;
+
+document.addEventListener('keydown', (e) => {
+    const key = e.key;
+    
+    if (key === Code[Index]) {
+        Index++;
+        
+        if (Index === Code.length) {
+            Index = 0;
+            window.location.href="game.html";
+        }
+    } else {
+        Index = 0;
+    }
+});
+
 function activateKonamiCode() {
     if (isSpinning) return;
     isSpinning = true;
