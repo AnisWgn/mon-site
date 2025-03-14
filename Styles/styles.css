@@ -135,8 +135,8 @@ html,body {
 }
 
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-top: 40px;
 }
@@ -165,8 +165,8 @@ html,body {
 }
 
 .stats-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 40px;
     padding: 60px 20px;
     text-align: center;
@@ -192,8 +192,8 @@ html,body {
 }
 
 .domains-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     margin-top: 40px;
 }
@@ -216,6 +216,9 @@ html,body {
     text-align: center;
     padding: 80px 20px;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .start-section h2 {
