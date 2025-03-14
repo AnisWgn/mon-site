@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <Title>Page de connexion</Title>
+    <Title>ADALG - Trouvez votre stage idéal</Title>
     <meta charset="UTF-8" data-theme="light">
     <script src="Script/script.js" defer></script>
     <link rel="stylesheet" href="Styles/styles.css">
@@ -20,29 +20,69 @@
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
-        <div class="login-container">
-            <h1 class="login-title">Page de connexion</h1>
-            <form action="traitement.php" method="post">
-                <div class="input-group">
-                    <label for="username"><strong>Identifiant ou email :</strong></label>
-                    <input type="text" id="username" name="username" required>
-                </div>
+        <div class="search-container">
+            <h1>Trouvez le stage qui vous correspond</h1>
+            <div class="search-box">
+                <input type="text" placeholder="Quel stage recherchez-vous ?" class="search-input">
+                <input type="text" placeholder="Où ? (ville, département...)" class="search-input">
+                <button class="search-btn">Rechercher</button>
+            </div>
 
-                <div class="input-group">
-                    <label for="password"><strong>Mot de passe :</strong></label>
-                    <input type="password" id="password" name="password" required>
-                </div>
+            <div class="featured-offers">
+                <h2>Stages en vedette</h2>
+                <div class="offer-grid">
+                    <div class="offer-card">
+                        <h3>Stage Développeur Full Stack</h3>
+                        <p class="company">TechCorp - Paris</p>
+                        <p class="description">Participez au développement de nos applications web innovantes</p>
+                        <ul class="details">
+                            <li>6 mois</li>
+                            <li>Stage conventionné</li>
+                            <li>1000€/mois</li>
+                        </ul>
+                        <button class="apply-btn">Postuler</button>
+                    </div>
 
-                <button type="submit" class="login-btn">Se connecter</button>
-                <button type="submit" class="register-btn">S'inscrire</button>
+                    <div class="offer-card">
+                        <h3>Stage Marketing Digital</h3>
+                        <p class="company">MarketPro - Lyon</p>
+                        <p class="description">Rejoignez notre équipe marketing pour des campagnes innovantes</p>
+                        <ul class="details">
+                            <li>4 mois</li>
+                            <li>Stage conventionné</li>
+                            <li>800€/mois</li>
+                        </ul>
+                        <button class="apply-btn">Postuler</button>
+                    </div>
 
-                <div class="forgot-password">
-                    <a href="http://127.0.0.1:5500/Script/Mot_De_Passe_Oublier/Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">Mot de passe oublié ?</a>
+                    <div class="offer-card">
+                        <h3>Stage Data Science</h3>
+                        <p class="company">DataX - Bordeaux</p>
+                        <p class="description">Analysez des données pour des projets d'IA innovants</p>
+                        <ul class="details">
+                            <li>5 mois</li>
+                            <li>Stage conventionné</li>
+                            <li>1200€/mois</li>
+                        </ul>
+                        <button class="apply-btn">Postuler</button>
+                    </div>
                 </div>
-            </form>
+            </div>
+
+            <div class="categories">
+                <h2>Domaines populaires</h2>
+                <div class="category-grid">
+                    <button class="category-btn">Développement Web</button>
+                    <button class="category-btn">Marketing Digital</button>
+                    <button class="category-btn">Data Science</button>
+                    <button class="category-btn">Design UX/UI</button>
+                    <button class="category-btn">Commerce</button>
+                    <button class="category-btn">Communication</button>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 ADALG. Tous droits réservés.</p>
+        <p>© 2025 ADALG. Tous droits réservés.</p>
     </footer>
 </body>
