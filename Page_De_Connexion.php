@@ -3,8 +3,8 @@
 <head>
     <Title>Page de connexion</Title>
     <meta charset="UTF-8" data-theme="light">
-    <script src="/mon-site/Script/script.js" defer></script>
-    <link rel="stylesheet" href="/mon-site/Styles/styles.css">
+    <script src="Script/script.js" defer></script>
+    <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
