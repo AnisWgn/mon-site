@@ -121,7 +121,6 @@ header {
     color: var(--header-page-text-color)
 }
 
-
 .header-page:hover{
     box-shadow: 0px 2px 0px 0px var(--header-page-hover-box-shadow);
 }
@@ -286,4 +285,8 @@ html {
 .robot {
     top: 15px;
     right: 30px;
+}
+
+.box-shadow{
+    box-shadow: 0px 2px 0px 0px var(--header-main-page-text-color);
 }

@@ -49,7 +49,7 @@
                 </div>
 
                 <button type="submit" class="login-btn">Se connecter</button>
-                <button type="submit" class="register-btn">S'inscrire</button>
+                <button class="register-btn">S'inscrire</button>
 
                 <div class="forgot-password">
                     <a href="Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">
