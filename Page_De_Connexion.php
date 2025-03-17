@@ -1,3 +1,18 @@
+<?php
+    session_start();
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $login = $_POST['username'];
+        $password = $_POST['password'];
+
+        if ($login == 'admin' && $password == '1234') {
+            $_SESSION['username'] = 'admin';
+            header('Location: dashboard.php');
+            exit;
+        } else {
+            echo 'Identifiants incorrects. Veuillez réessayer.';
+        }
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,7 +37,7 @@
     <main>
         <div class="login-container">
             <h1 class="login-title">Page de connexion</h1>
-            <form action="traitement.php" method="post">
+            <form  action="" method="POST">
                 <div class="input-group">
                     <label for="username"><strong>Identifiant ou email :</strong></label>
                     <input type="text" id="username" name="username" required>
@@ -37,7 +52,8 @@
                 <button type="submit" class="register-btn">S'inscrire</button>
 
                 <div class="forgot-password">
-                    <a href="http://127.0.0.1:5500/Script/Mot_De_Passe_Oublier/Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">Mot de passe oublié ?</a>
+                    <a href="Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">
+                        Mot de passe oublié ?</a>
                 </div>
             </form>
         </div>
