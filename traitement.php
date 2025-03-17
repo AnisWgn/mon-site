@@ -17,29 +17,13 @@
         <dotlottie-player src="https://lottie.host/95785f1b-5a37-4ec5-945a-a00f85032478/TmPkyyjm2k.lottie" 
             background="transparent" speed="1" style="width: 70px; height: 70px" loop autoplay>
         </dotlottie-player>
-        <button id ="mode-btn" class="mode" >Mode 🌚</button>
+        <button id ="mode-btn" class="mode" >Mode 🌚</button>   
     </header>
     <main>
-        <div class="login-container">
-            <h1 class="login-title">Page de connexion</h1>
-            <form action="traitement.php" method="post">
-                <div class="input-group">
-                    <label for="username"><strong>Identifiant ou email :</strong></label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="password"><strong>Mot de passe :</strong></label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-
-                <button type="submit" class="login-btn">Se connecter</button>
-                <button type="submit" class="register-btn">S'inscrire</button>
-
-                <div class="forgot-password">
-                    <a href="Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">Mot de passe oublié ?</a>
-                </div>
-            </form>
+        <div class="reset-password-container">
+            <h1 class="login-title">Récupération du mot de passe</h1>
+            <p>Nous vous envons envoyé un mail avec un lien permettant de réinitialer votre mot de passe.</p>
+            <p class="contact"><a href="Page_De_Connexion.html" class="contact"> Retourner vers la page de connexion </a></p>
         </div>
     </main>
     <footer>
