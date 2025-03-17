@@ -17,18 +17,13 @@
         <dotlottie-player src="https://lottie.host/95785f1b-5a37-4ec5-945a-a00f85032478/TmPkyyjm2k.lottie" 
             background="transparent" speed="1" style="width: 70px; height: 70px" loop autoplay>
         </dotlottie-player>
-        <button id ="mode-btn" class="mode" >Mode 🌚</button>   
+        <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
-        <div class="login-container">
-            <h1 class="login-title">Mot de passe oublié</h1>
-            <form action="traitement.php" method="post">
-                <div class="input-group">
-                    <label for="username"><strong>Identifiant ou email :</strong></label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <button type="submit" class="login-btn">Récupérer le mot de passe</button>           
-            </form>
+        <div class="traitement-container">
+            <h1 class="login-title">Réinitialisation du mot de passe</h1>
+            <p class="contact">Nouv vous avons envoyé un email afin de réinitialiser votre mot de passe</p>
+            <p class="contact"><a href="Page_De_Connexion.html" class="contact"> Retourner à la page de connexion </a></p>
         </div>
     </main>
     <footer>
