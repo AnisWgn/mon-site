@@ -21,8 +21,25 @@
     </header>
     <main>
         <div class="login-container">
-            <h1 class="login-title">Contactez-nous</h1>
-            <a href="mailto:adalg.contact@gmail.com" class="forgot-password" id="forgot-password"> adalg.contact@gmail.com </a>
+            <h1 class="login-title">Page de connexion</h1>
+            <form action="traitement.php" method="post">
+                <div class="input-group">
+                    <label for="username"><strong>Identifiant ou email :</strong></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password"><strong>Mot de passe :</strong></label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit" class="login-btn">Se connecter</button>
+                <button type="submit" class="register-btn">S'inscrire</button>
+
+                <div class="forgot-password">
+                    <a href="http://127.0.0.1:5500/Script/Mot_De_Passe_Oublier/Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">Mot de passe oublié ?</a>
+                </div>
+            </form>
         </div>
     </main>
     <footer>
