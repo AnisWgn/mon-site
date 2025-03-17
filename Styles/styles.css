@@ -294,6 +294,20 @@ html {
 }
 
 .contact{
-    padding-bottom: 10px;
+    padding-bottom: 9px;
     color: var(--mail-color);
+    text-decoration: none;
+}
+
+.contact-container{
+    background-color: var(--login-container-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--login-container-box-shadow);
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
