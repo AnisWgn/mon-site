@@ -22,8 +22,8 @@
     <main>
         <div class="traitement-container">
             <h1 class="login-title">Réinitialisation du mot de passe</h1>
-            <p class="contact">Nouv vous avons envoyé un email afin de réinitialiser votre mot de passe</p>
-            <p class="contact"><a href="Page_De_Connexion.html" class="contact"> Retourner à la page de connexion </a></p>
+            <p>Nouv vous avons envoyé un email afin de réinitialiser votre mot de passe</p>
+            <p><a href="Page_De_Connexion.html" class="contact"> Retourner à la page de connexion </a></p>
         </div>
     </main>
     <footer>
