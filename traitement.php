@@ -20,26 +20,10 @@
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
-        <div class="login-container">
-            <h1 class="login-title">Page de connexion</h1>
-            <form action="" method="post">
-                <div class="input-group">
-                    <label for="username"><strong>Identifiant ou email :</strong></label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="password"><strong>Mot de passe :</strong></label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-
-                <button type="submit" class="login-btn">Se connecter</button>
-                <button type="submit" class="register-btn">S'inscrire</button>
-
-                <div class="forgot-password">
-                    <a href="http://127.0.0.1:5500/Script/Mot_De_Passe_Oublier/Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">Mot de passe oublié ?</a>
-                </div>
-            </form>
+        <div class="traitement-container">
+            <h1 class="login-title">Réinitialisation du mot de passe</h1>
+            <p>Nouv vous avons envoyé un email afin de réinitialiser votre mot de passe</p>
+            <p><a href="Page_De_Connexion.html" class="contact"> Retourner à la page de connexion </a></p>
         </div>
     </main>
     <footer>

@@ -9,13 +9,41 @@
 <body>
     <style>
         .header-main-page{
-            box-shadow: none;
+            box-shadow:none;
+        }
+        .header-page1 {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: inline-block;
+        transition: box-shadow 0.5s ease-in-out;
+        opacity: 1; /* Empêche toute réduction d'opacité */
+        color: var(--header-page-text-color);
+        box-shadow:0px 2px 0px 0px var(--header-page-hover-box-shadow);
+    }
+        .offers-title {
+            color: var(--offer-title-color);
+            display: flex;
+            justify-content: center;
+        }
+        .offer h2{
+            color: var(--offer-color-h2)
+        }
+        .offer strong {
+            color: var(--offer-color-strong)
+        }
+        .offer {
+            margin: 0px 0px 20px;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: var(--login-container-box-shadow);
         }
     </style>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <header>
         <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
-        <button class="header-btn"><p class="header-page" id ="home-btn">Page d'accueil</p></button>
+        <button class="header-btn"><p class="header-page1" id ="home-btn">Page d'accueil</p></button>
         <button class="header-btn"><p class="header-page" id ="faq-btn">Question fréquente</p></button>
         <button class="header-btn"><p class="header-page" id ="contact-btn">Contact</p></button>
         <button class="header-btn"><p class="header-main-page" id ="connexion-btn">Connexion</p></button>
@@ -25,26 +53,39 @@
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
-        <div class="login-container">
-            <h1 class="login-title">Page de connexion</h1>
-            <form action="" method="post">
-                <div class="input-group">
-                    <label for="username"><strong>Identifiant ou email :</strong></label>
-                    <input type="text" id="username" name="username" required>
-                </div>
+        <div class="offers-container">
+            <h1 class="offers-title">Offres de Stages</h1>
 
-                <div class="input-group">
-                    <label for="password"><strong>Mot de passe :</strong></label>
-                    <input type="password" id="password" name="password" required>
-                </div>
+            <!-- Liste des offres de stages -->
+            <div class="offer">
+                <h2>Stage en Développement Web</h2>
+                <p><strong>Entreprise :</strong> TechCorp</p>
+                <p><strong>Lieu :</strong> Paris</p>
+                <p><strong>Description :</strong> Nous recherchons un stagiaire pour participer au développement de nos applications web.</p>
+                <button class="Btn">
+                    Postuler
+                  </button>
+            </div>
 
-                <button type="submit" class="login-btn">Se connecter</button>
-                <button type="submit" class="register-btn">S'inscrire</button>
+            <div class="offer">
+                <h2>Stage en Marketing Digital</h2>
+                <p><strong>Entreprise :</strong> MarketPro</p>
+                <p><strong>Lieu :</strong> Lyon</p>
+                <p><strong>Description :</strong> Aidez-nous à créer des campagnes publicitaires innovantes.</p>
+                <button class="Btn">
+                    Postuler
+                  </button>
+            </div>
 
-                <div class="">
-                    <a href="http://127.0.0.1:5500/Script/Mot_De_Passe_Oublier/Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">Mot de passe oublié ?</a>
-                </div>
-            </form>
+            <div class="offer">
+                <h2>Stage en Data Science</h2>
+                <p><strong>Entreprise :</strong> DataX</p>
+                <p><strong>Lieu :</strong> Bordeaux</p>
+                <p><strong>Description :</strong> Participez à des projets d'analyse de données et de machine learning.</p>
+                <button class="Btn">
+                    Postuler
+                  </button>
+            </div>
         </div>
     </main>
     <footer>
