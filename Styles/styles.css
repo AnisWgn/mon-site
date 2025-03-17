@@ -20,6 +20,7 @@
     --register-btn-hover-bg-color: rgba(0,0,0,0.6);
     --register-btn-hover-text-color: #f1f1f1;
     --forgot-password-text-color: #3600f7;
+    --mail-color: #007BFF;
 }
 
 [data-theme="dark"] {
@@ -43,6 +44,7 @@
     --register-btn-hover-bg-color: rgba(255, 255, 255, 0.1);
     --register-btn-hover-text-color: #f1f1f1;
     --forgot-password-text-color: rgba(138, 43, 226,1);
+    --mail-color: rgba(138, 43, 226,1);
 }
 
 .forgot-password a {
@@ -153,7 +155,7 @@ main {
 .login-container {
     background-color: var(--login-container-bg-color);
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: var(--login-container-box-shadow);
     width: 300px;
     text-align: center;
@@ -288,5 +290,24 @@ html {
 }
 
 .box-shadow{
-    box-shadow: 0px 2px 0px 0px var(--header-main-page-hover-box-shadow);
+    box-shadow: 0px 2px 0px 0px var(--header-main-page-text-color);
+}
+
+.contact{
+    padding-bottom: 9px;
+    color: var(--mail-color);
+    text-decoration: none;
+}
+
+.contact-container{
+    background-color: var(--login-container-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--login-container-box-shadow);
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
