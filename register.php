@@ -28,10 +28,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             echo "Compte créé avec succès.";
-            header('header:');
+            header('location:dashboard.php');
         } else {
             echo "Erreur : " . $conn->error;
         }
-    }
+    }   
 }
 ?>

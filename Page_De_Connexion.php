@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<head>
     <Title>Page de connexion</Title>
     <meta charset="UTF-8" data-theme="light">
     <script src="Script/script.js" defer></script>

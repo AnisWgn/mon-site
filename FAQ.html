@@ -7,12 +7,28 @@
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
+    <style>
+            .header-main-page{
+            box-shadow:none;
+        }
+        .header-page1 {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: inline-block;
+            transition: box-shadow 0.5s ease-in-out;
+            opacity: 1; /* Empêche toute réduction d'opacité */
+            color: var(--header-page-text-color);
+            box-shadow:0px 2px 0px 0px var(--header-page-hover-box-shadow);
+    }
+    </style>
     <header>
         <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
         <button class="header-btn"><p class="header-page" id ="home-btn">Page d'accueil</p></button>
-        <button class="header-btn"><p class="header-main-page" id ="faq-btn">Question fréquente</p></button>
+        <button class="header-btn"><p class="header-page1" id ="faq-btn">Question fréquente</p></button>
         <button class="header-btn"><p class="header-page" id ="contact-btn">Contact</p></button>
-        <button class="header-btn"><p class="header-page" id ="connexion-btn">Connexion</p></button>
+        <button class="header-btn"><p class="header-main-page" id ="connexion-btn">Connexion</p></button>
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
