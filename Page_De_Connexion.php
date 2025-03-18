@@ -1,18 +1,3 @@
-<?php
-    session_start();
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $login = $_POST['username'];
-        $password = $_POST['password'];
-
-        if ($login == 'admin' && $password == '1234') {
-            $_SESSION['username'] = 'admin';
-            header('Location: dashboard.php');
-            exit;
-        } else {
-            echo 'Identifiants incorrects. Veuillez réessayer.';
-        }
-    }
-    ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -22,40 +7,40 @@
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <header>
         <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
         <button class="header-btn"><p class="header-page" id ="home-btn">Page d'accueil</p></button>
         <button class="header-btn"><p class="header-page" id ="faq-btn">Question fréquente</p></button>
-        <button class="header-btn"><p class="header-page" id ="contact-btn">Contact</p></button>
+        <button class="header-btn"><p class="header-page" id ="contact-btn" href="contact.php">Contact</p></button>
         <button class="header-btn"><p class="header-main-page" id ="connexion-btn">Connexion</p></button>
-        <dotlottie-player src="https://lottie.host/95785f1b-5a37-4ec5-945a-a00f85032478/TmPkyyjm2k.lottie" 
-            background="transparent" speed="1" style="width: 70px; height: 70px" loop autoplay>
-        </dotlottie-player>
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
         <div class="login-container">
-            <h1 class="login-title">Page de connexion</h1>
-            <form  action="" method="POST">
+            <dotlottie-player src="https://lottie.host/a6fed922-3f61-481e-bd6b-db578bd311c1/ROKqhj53FK.lottie" 
+            background="transparent" speed="1" style="width: 150px; height: 150px" loop autoplay>
+            </dotlottie-player>
+            <form  action="login.php" method="POST">
                 <div class="input-group">
-                    <label for="username"><strong>Identifiant ou email :</strong></label>
-                    <input type="text" id="username" name="username" required>
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="email" id="username" name="email" placeholder="Email"required>
                 </div>
 
                 <div class="input-group">
-                    <label for="password"><strong>Mot de passe :</strong></label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="password"><strong>Mot de passe:</strong></label>
+                    <input type="password" id="password" name="password" placeholder="Mot de passe"required>
                 </div>
 
                 <button type="submit" class="login-btn">Se connecter</button>
-                <button class="register-btn">S'inscrire</button>
+            </form>
+            <button class="register-btn" onclick="window.location.href='Page_d_inscription.php'">S'inscrire</button>
+
 
                 <div class="forgot-password">
                     <a href="Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">
                         Mot de passe oublié ?</a>
                 </div>
-            </form>
         </div>
     </main>
     <footer>

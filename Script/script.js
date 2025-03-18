@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Existing event listeners for navigation
     const navigationButtons = [
-        { id: "hub-btn", url: "Hub.html" },
-        { id: "home-btn", url: "index.html" },
+        { id: "hub-btn", url: "index.html" },
+        { id: "home-btn", url: "Hub.html" },
         { id: "faq-btn", url: "FAQ.html" },
         { id: "question-btn", url: "question.html" },
-        { id: "contact-btn", url: "contacte.html" },
+        { id: "contact-btn", url: "contact.php" },
         { id: "connexion-btn", url: "Page_De_Connexion.php" },
         { id: "inscription-btn", url: "Page_Inscription.html" },
         { id: "forgot-password", url: "Mot_de_Passe_oublié.html" }

@@ -175,7 +175,13 @@ main {
     border-radius: 4px;
     cursor: pointer;
     background-color: var(--register-btn-bg-color);
+    opacity: 1;
 }
+
+dotlottie-player{
+    padding-left: 25%;
+}
+
 
 .register-btn:hover {
     background-color: var(--register-btn-hover-bg-color);
@@ -323,4 +329,33 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.faq-container{
+    padding: 20px;
+    border-radius: 8px;
+    width: 1500px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+}
+
+.faq-item{
+    margin: 0px 0px 20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: var(--login-container-box-shadow);
+}
+
+.prez {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prez div{
+    margin: 0px 0px 20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: var(--login-container-box-shadow);
 }
