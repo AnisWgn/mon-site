@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 <style>
             .header-page1 {
             padding-left: 15px;

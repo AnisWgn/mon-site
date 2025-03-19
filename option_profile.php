@@ -23,7 +23,7 @@ if (!isset($_SESSION['username'])) {
             text-decoration: none;
         }
     </style>
-<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <header>
         <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
         <button class="header-btn"><p class="header-page" id ="home-btn">Page d'accueil</p></button>

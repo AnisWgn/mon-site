@@ -108,8 +108,13 @@ header {
     padding-bottom: 20px;
     display: inline-block;
     color: var(--header-main-page-text-color);
+    transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0px 2px 0px 0px var(--header-main-page-text-color);
     opacity: 1; /* Empêche toute réduction d'opacité */
+}
+
+.header-main-page:hover{
+    box-shadow: 0px 2px 0px 0px var(--header-main-page-hover-box-shadow);
 }
 
 .header-page {
@@ -118,7 +123,7 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     display: inline-block;
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
     opacity: 1; /* Empêche toute réduction d'opacité */
     color: var(--header-page-text-color)
 }
