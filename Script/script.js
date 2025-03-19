@@ -32,14 +32,27 @@ document.addEventListener("DOMContentLoaded", function () {
         modeBtn.textContent = `Mode ${themeIcons[theme]}`;
     }
 
-    // Existing event listeners for navigation
+    const registerForm = document.querySelector('form[action="register.php"]');
+    if (registerForm) {
+        registerForm.addEventListener('submit', function (event) {
+            const password = document.querySelector('input[name="password"]');
+            const confirmPassword = document.querySelector('input[name="confirm-password"]');
+            
+            if (password.value !== confirmPassword.value) {
+                event.preventDefault();
+                alert('Les mots de passe ne sont pas identiques. Veuillez réessayer.');
+                confirmPassword.focus();
+            }
+        });
+    }
+
     const navigationButtons = [
-        { id: "hub-btn", url: "Hub.html" },
-        { id: "home-btn", url: "index.html" },
+        { id: "hub-btn", url: "index.html" },
+        { id: "home-btn", url: "Hub.html" },
         { id: "faq-btn", url: "FAQ.html" },
         { id: "question-btn", url: "question.html" },
-        { id: "contact-btn", url: "contacte.html" },
-        { id: "connexion-btn", url: "Page_De_Connexion.html" },
+        { id: "contact-btn", url: "contact.php" },
+        { id: "connexion-btn", url: "Page_De_Connexion.php" },
         { id: "inscription-btn", url: "Page_Inscription.html" },
         { id: "forgot-password", url: "Mot_de_Passe_oublié.html" }
     ];
