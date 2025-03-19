@@ -49,4 +49,24 @@ document.addEventListener("DOMContentLoaded", function () {
             element.addEventListener("click", () => window.location.href = url);
         }
     });
+
+    const form = document.querySelector('form');
+    const passwordInput = document.getElementById('password');
+    const confirmPasswordInput = document.getElementById('confirm-password');
+
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            const errorMessage = document.getElementById('password-error');
+
+            if (passwordInput.value !== confirmPasswordInput.value) {
+                event.preventDefault();
+
+                if (errorMessage) {
+                    errorMessage.style.display = 'block';
+                } else {
+                    alert('Les mots de passe ne sont pas identiques. Veuillez réessayer.');
+                }
+            }
+        });
+    }
 });
