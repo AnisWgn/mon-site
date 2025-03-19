@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "contact-btn", url: "contact.php" },
         { id: "connexion-btn", url: "Page_De_Connexion.php" },
         { id: "inscription-btn", url: "Page_Inscription.html" },
+        { id: "account", url: "option_profile.php" },
         { id: "forgot-password", url: "Mot_de_Passe_oublié.html" }
     ];
 

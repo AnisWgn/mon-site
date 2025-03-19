@@ -5,6 +5,7 @@
     <meta charset="UTF-8" data-theme="light">
     <script src="Script/script.js" defer></script>
     <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
 </head>
 <body>
 <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
@@ -14,12 +15,16 @@
         <button class="header-btn"><p class="header-page" id ="faq-btn">Question fréquente</p></button>
         <button class="header-btn"><p class="header-page" id ="contact-btn" href="contact.php">Contact</p></button>
         <button class="header-btn"><p class="header-main-page" id ="connexion-btn">Connexion</p></button>
+        <button class="account" id="account">
+            <dotlottie-player src="https://lottie.host/72051f11-46f8-47cb-b094-3ea2924fcfa4/TwtZwgHEif.lottie" 
+            background="transparent" speed="0.5" style="width: 50px; height: 50px"  loop autoplay>
+            </dotlottie-player></button>
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
         <div class="login-container">
             <dotlottie-player src="https://lottie.host/a6fed922-3f61-481e-bd6b-db578bd311c1/ROKqhj53FK.lottie" 
-            background="transparent" speed="1" style="width: 150px; height: 150px" loop autoplay>
+            background="transparent" speed="0.5" style="width: 150px; height: 150px" loop autoplay>
             </dotlottie-player>
             <form  action="login.php" method="POST">
                 <div class="input-group">
@@ -38,8 +43,7 @@
 
 
                 <div class="forgot-password">
-                    <a href="Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">
-                        Mot de passe oublié ?</a>
+                    <a href="Mot_De_Passe_Oublié.html" class="forgot-password" id="forgot-password">Mot de passe oublié ?</a>
                 </div>
         </div>
     </main>

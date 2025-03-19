@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION["username"] = $result["username"];
         $_SESSION["role"] = $result["role"];
         echo "Connexion réussie !";
-        header('location: dashboard.php');
+        header('location: option_profile.php');
     } else {
         echo "Identifiants incorrects.";
     }
