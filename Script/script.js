@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
         modeBtn.textContent = `Mode ${themeIcons[theme]}`;
     }
 
-    // Existing event listeners for navigation
     const navigationButtons = [
         { id: "hub-btn", url: "index.html" },
         { id: "home-btn", url: "Hub.html" },

@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($stmt->execute()) {
             echo "Compte créé avec succès.";
-            header('location:dashboard.php');
+            header("Location: Page_De_Connexion.php");
         } else {
             echo "Erreur : " . $conn->error;
         }

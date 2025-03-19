@@ -15,7 +15,6 @@ if (!isset($_SESSION['username'])) {
     <title>Tableau de Bord</title>
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
-</head>
 <body>
     <?php
     echo "<h1>Bienvenue, " . htmlspecialchars($_SESSION['username']) . " !</h1>";
