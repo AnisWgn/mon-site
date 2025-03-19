@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
-    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <header>
         <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
         <button class="header-btn"><p class="header-page" id ="home-btn">Page d'accueil</p></button>
@@ -19,37 +19,29 @@
             background="transparent" speed="0.5" style="width: 50px; height: 50px"  loop autoplay>
             </dotlottie-player></button>
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
-    </header> 
+    </header>
     <main>
         <div class="login-container">
             <h1 class="login-title">Page d'inscription</h1>
-            <form  action="" method="POST">
-                
-                <div class="input-group">
-                    <select name="droits" id="droits">
-                        <option>étudiant</option>
-                        <option>enseignant</option>
-                        <option>entreprise</option>
-                    </select>
-                </div>
+            <form  action="register.php" method="POST">
                 <div class="input-group">
                     <label for="username"><strong>Nom :</strong></label>
-                    <input type="text" id="username" name="username" required placeholder="Nom">
+                    <input type="text" id="username" name="username" placeholder="Nom" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="Gmail"><strong>Gmail</strong></label>
-                    <input type="text" id="Gmail" name="Gmail" required placeholder="Gmail">
+                    <label for="email"><strong>email</strong></label>
+                    <input type="email" id="Gmail" name="email" placeholder="email" required>
                 </div>
 
                 <div class="input-group">
                     <label for="password"><strong>Mot de passe :</strong></label>
-                    <input type="password" id="password" name="password" required placeholder="Mot de passe"> 
+                    <input type="password" id="password" name="password" placeholder="Mot de passe"required>
                 </div>
 
                 <div class="input-group">
                     <label for="confirm-password"><strong>Confirmez le mot de passe :</strong></label>
-                    <input type="password" id="password" name="confirm-password" required placeholder="Confirmez le mot de passe">
+                     <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez le mot de passe">
                 </div>
 
                 <div>
