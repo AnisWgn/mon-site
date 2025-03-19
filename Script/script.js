@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const navigationButtons = [
-        { id: "hub-btn", url: "index.html" },
-        { id: "home-btn", url: "Hub.html" },
+        { id: "hub-btn", url: "index.php" },
+        { id: "home-btn", url: "Hub.php" },
         { id: "faq-btn", url: "FAQ.html" },
         { id: "question-btn", url: "question.html" },
         { id: "contact-btn", url: "contact.php" },
