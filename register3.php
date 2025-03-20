@@ -10,13 +10,13 @@ if ($conn->connect_error) {
 // Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Nettoyer et valider les entrées
-    $username = trim($_POST["company-name"]);
+    $username = trim($_POST["nom"]);
     $email = trim($_POST["email"]);
-    $siren = trim($_POST["SIREN"]);
-    $password = $_POST["password"];
+    $etablissement = trim($_POST["etablissement"]);
+    $password = $_POST["mot_de_passe"];
 
     // Valider les champs obligatoires
-    if (empty($username) || empty($email) || empty($siren) || empty($password)) {
+    if (empty($username) || empty($email) || empty($etablissement) || empty($password)) {
         die("Tous les champs sont obligatoires.");
     }
 
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password_hashed = password_hash($password, PASSWORD_DEFAULT);
 
     // Vérifier si l'email existe déjà
-    $stmt = $conn->prepare("SELECT id FROM entreprises WHERE email = ?");
+    $stmt = $conn->prepare("SELECT id FROM prof WHERE email = ?");
     if (!$stmt) {
         die("Erreur de préparation de la requête : " . $conn->error);
     }
@@ -42,11 +42,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
     } else {
         // Insérer l'utilisateur dans la base de données
-        $stmt = $conn->prepare("INSERT INTO entreprises (nom, email, siren, mot_de_passe) VALUES (?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO prof (nom, email, etablissement, mot_de_passe) VALUES (?, ?, ?, ?)");
         if (!$stmt) {
             die("Erreur de préparation de la requête : " . $conn->error);
         }
-        $stmt->bind_param("ssss", $username, $email, $siren, $password_hashed);
+        $stmt->bind_param("ssss", $username, $email, $etablissement, $password_hashed);
 
         if ($stmt->execute()) {
             echo "Compte créé avec succès.";
