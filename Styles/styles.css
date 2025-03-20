@@ -108,8 +108,13 @@ header {
     padding-bottom: 20px;
     display: inline-block;
     color: var(--header-main-page-text-color);
+    transition: box-shadow 0.3s ease-in-out;
     box-shadow: 0px 2px 0px 0px var(--header-main-page-text-color);
     opacity: 1; /* Empêche toute réduction d'opacité */
+}
+
+.header-main-page:hover{
+    box-shadow: 0px 2px 0px 0px var(--header-main-page-hover-box-shadow);
 }
 
 .header-page {
@@ -118,7 +123,7 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     display: inline-block;
-    transition: box-shadow 0.5s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
     opacity: 1; /* Empêche toute réduction d'opacité */
     color: var(--header-page-text-color)
 }
@@ -175,7 +180,13 @@ main {
     border-radius: 4px;
     cursor: pointer;
     background-color: var(--register-btn-bg-color);
+    opacity: 1;
 }
+
+dotlottie-player{
+    padding-left: 25%;
+}
+
 
 .register-btn:hover {
     background-color: var(--register-btn-hover-bg-color);
@@ -219,7 +230,8 @@ h1:hover {
     font-size: 16px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: pointer;    
+    margin-top:15px;
 }
 
 .login-btn:hover {
@@ -340,4 +352,45 @@ html {
     padding: 10px;
     border-radius: 15px;
     box-shadow: var(--login-container-box-shadow);
+}
+
+.prez {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.prez div{
+    margin: 0px 0px 20px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: var(--login-container-box-shadow);
+}
+
+.account{
+    background: transparent;
+    position: absolute;
+    top: 2px;
+    border: none;
+    right: 170px;
+    padding: 10px 10px 10px 10px;
+    font-size: 18px;
+    color:var(--mode-text-color);
+    cursor: pointer;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-label {
+    font-size: 13px;
+    color: var(--checkbox-label-color);
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin:10px;
+}
+
+.option-select {
+    border-radius: 15px;
 }
