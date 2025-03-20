@@ -10,10 +10,10 @@ if ($conn->connect_error) {
 // Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Nettoyer et valider les entrées
-    $username = trim($_POST["nom"]);
+    $username = trim($_POST["prof-name"]);
     $email = trim($_POST["email"]);
-    $etablissement = trim($_POST["etablissement"]);
-    $password = $_POST["mot_de_passe"];
+    $etablissement = trim($_POST["Etablissement"]);
+    $password = $_POST["password"];
 
     // Valider les champs obligatoires
     if (empty($username) || empty($email) || empty($etablissement) || empty($password)) {
