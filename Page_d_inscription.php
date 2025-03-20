@@ -95,7 +95,7 @@
 
                     <div class="input-group">
                         <label for="siren"><strong>SIREN :</strong></label>
-                        <input type="text" id="siren" name="SIREN" placeholder="SIREN" required>
+                        <input type="number" min="0" max="9" step="1" id="siren" name="SIREN" placeholder="SIREN" required>
                     </div>
 
                     <div class="input-group">
@@ -116,7 +116,7 @@
                 <div id="div3" class="content">
                     <div class="input-group">
                         <label for="prof-name"><strong>Nom :</strong></label>
-                        <input type="text" id="prof-name" name="prof-name" placeholder="Nom" required>
+                        <input type="text" id="prof-name" name="name" placeholder="Nom" required>
                     </div>
 
                     <div class="input-group">
@@ -126,7 +126,7 @@
 
                     <div class="input-group">
                         <label for="prof-email"><strong>Etablissement :</strong></label>
-                        <input type="text" id="prof-email" name="Etablissement" placeholder="Etablissement" required>
+                        <input type="text" id="prof-email" name="etablissement" placeholder="Etablissement" required>
                     </div>
 
                     <div class="input-group">
