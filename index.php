@@ -8,36 +8,7 @@
 </head>
 <body>
     <style>
-        .stat-div:hover{
-            zoom: 1.01;
-        }
-        h1,h1:hover{
-            text-align: center;
-            text-decoration: none;
-            cursor:default;
-        }
 
-        .number{
-            font-size: 100px;
-            text-align: center;
-            font-weight: bold;
-
-        }
-
-        .stat-div{
-            text-align: center;
-            color: var(--header-page-text-color);
-            font-weight: bold;
-        }
-
-
-        .statistic{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-        
         .header-main-page{
             box-shadow:none;
         }
@@ -79,21 +50,7 @@
                 <p>Il a pour but de créer un espace d'interconnection entre étudiants en recherche de stage et entreprises en recherche de stagiaires tout cela sous la suppervision de professeurs.</p>
             </div>
             <div class="stat">
-                <h1>Statistiques</h1>
-                    <div class="statistic">
-                        <div class="stat-div">
-                            <h1>Nombre d'utilisateurs:</h1>
-                            <p class="number">0</p>
-                        </div>
-                        <div class="stat-div">
-                            <h1>Nombre de professeurs:</h1>
-                            <p class="number">0</p>
-                        </div>
-                        <div class="stat-div">
-                            <h1>Nombre d'entreprises:</h1>
-                            <p class="number">0</p>
-                        </div>
-                    </div>
+                
             </div>
         </div>
     </main>
