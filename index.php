@@ -10,36 +10,7 @@
     <script src="server.js" defer></script>
     <script src="count.js" defer></script>
     <style>
-        .stat-div:hover{
-            zoom: 1.01;
-        }
-        h1,h1:hover{
-            text-align: center;
-            text-decoration: none;
-            cursor:default;
-        }
 
-        .number{
-            font-size: 100px;
-            text-align: center;
-            font-weight: bold;
-
-        }
-
-        .stat-div{
-            text-align: center;
-            color: var(--header-page-text-color);
-            font-weight: bold;
-        }
-
-
-        .statistic{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-        }
-        
         .header-main-page{
             box-shadow:none;
         }
@@ -81,6 +52,7 @@
                 <p>Il a pour but de créer un espace d'interconnection entre étudiants en recherche de stage et entreprises en recherhce de stagiaires tout cela sous la suppervision de professeurs.</p>
             </div>
             <div class="stat">
+<<<<<<< HEAD
                 <h1>Statistiques</h1>
                     <div class="statistic">
                         <div class="stat-div">
@@ -96,6 +68,9 @@
                             <p class="number"><span id="database2">0</span></p>
                         </div>
                     </div>
+=======
+                
+>>>>>>> 7514b50f91a29077be0209eac86eb56336702932
             </div>
         </div>
     </main>
