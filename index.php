@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 <body>
+    <script src="server.js" defer></script>
+    <script src="count.js" defer></script>
     <style>
         .stat-div:hover{
             zoom: 1.01;
@@ -76,22 +78,22 @@
             <div class="prez div"> 
                 <h1>Pourquoi avoir fait ce site ?</h1>
                 <p>Le site ADALG est né de la "semaine de challenge" organisée par notre lycée.</p>
-                <p>Il a pour but de créer un espace d'interconnection entre étudiants en recherche de stage et entreprises en recherche de stagiaires tout cela sous la suppervision de professeurs.</p>
+                <p>Il a pour but de créer un espace d'interconnection entre étudiants en recherche de stage et entreprises en recherhce de stagiaires tout cela sous la suppervision de professeurs.</p>
             </div>
             <div class="stat">
                 <h1>Statistiques</h1>
                     <div class="statistic">
                         <div class="stat-div">
                             <h1>Nombre d'utilisateurs:</h1>
-                            <p class="number">0</p>
+                            <p class="number"><span id="database-size">0</span></p>
                         </div>
                         <div class="stat-div">
                             <h1>Nombre de professeurs:</h1>
-                            <p class="number">0</p>
+                            <p class="number"><span id="database">0</span></p>
                         </div>
                         <div class="stat-div">
                             <h1>Nombre d'entreprises:</h1>
-                            <p class="number">0</p>
+                            <p class="number"><span id="database2">0</span></p>
                         </div>
                     </div>
             </div>

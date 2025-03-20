@@ -1,4 +1,4 @@
-<?php
+<?php //ceci est un php
 session_start();
 
 if (!isset($_SESSION['username'])) {
@@ -21,7 +21,7 @@ if (!isset($_SESSION['username'])) {
     <style>
         .header-main-page{
             text-decoration: none;
-        }
+    }
     </style>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <header>
@@ -36,3 +36,32 @@ if (!isset($_SESSION['username'])) {
             </dotlottie-player></button>
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
+    <main>
+        <div class="login-container">
+            <h1 class="login-title">Modification du compte</h1>
+            <form  action="register.php" method="POST">
+                <div class="input-group">
+                    <label for="username"><strong>Nom :</strong></label>
+                    <input type="text" id="username" name="username" placeholder="Nom">
+                </div>
+
+                <div class="input-group">
+                    <label for="email"><strong>email</strong></label>
+                    <input type="email" id="Gmail" name="email" placeholder="email">
+                </div>
+
+                <div class="input-group">
+                    <label for="password"><strong>Mot de passe :</strong></label>
+                    <input type="password" id="password" name="password" placeholder="Mot de passe">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password"><strong>Confirmez le mot de passe :</strong></label>
+                     <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirmez le mot de passe">
+                </div>
+
+                <button type="submit" class="login-btn">Valider les modifications</button>
+            </form>
+        </div>
+    </main>
+</body>
