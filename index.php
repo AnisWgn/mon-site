@@ -76,7 +76,7 @@
             <div class="prez div"> 
                 <h1>Pourquoi avoir fait ce site ?</h1>
                 <p>Le site ADALG est né de la "semaine de challenge" organisée par notre lycée.</p>
-                <p>Il a pour but de créer un espace d'interconnection entre étudiants en recherche de stage et entreprises en recherhce de stagiaires tout cela sous la suppervision de professeurs.</p>
+                <p>Il a pour but de créer un espace d'interconnection entre étudiants en recherche de stage et entreprises en recherche de stagiaires tout cela sous la suppervision de professeurs.</p>
             </div>
             <div class="stat">
                 <h1>Statistiques</h1>
