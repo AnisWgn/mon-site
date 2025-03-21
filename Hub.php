@@ -1,3 +1,17 @@
+<?php
+// Connexion à la base de données
+$conn = new mysqli("localhost", "root", "", "adalg");
+
+// Vérifier la connexion
+if ($conn->connect_error) {
+    die("Connexion échouée : " . $conn->connect_error);
+}
+
+// Récupérer les publications depuis la base de données
+$sql = "SELECT titre, description, filiere, date_parution FROM publications ORDER BY date_parution DESC";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -111,6 +125,40 @@
             border-radius: 15px;
             box-shadow: var(--login-container-box-shadow);
         }
+
+        .create{
+            border-top-left-radius:15px ;
+            border-bottom-right-radius: 15px;
+            background-color: var(--mode-bg-color);
+            border :var(--mode-border);
+            color:var(--mode-text-color);
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 15px;
+            padding:10px;
+        }
+
+        .create:hover{
+            border : var(--mode-hover-border);
+        }
+
+        .create-text{
+            text-decoration: none;
+            font-size: 20px;
+            color: var(--mode-text-color);
+        }
+
+        .offers-container{
+            width: 40%;
+            font-family: 20px;
+        }
+
+        .offer{
+            font-size:20px ;
+            text-align: left;
+            padding-left:20px;
+        }
+
     </style>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <header>
@@ -119,6 +167,7 @@
         <button class="header-btn"><p class="header-page" id ="faq-btn">Question fréquente</p></button>
         <button class="header-btn"><p class="header-page" id ="contact-btn" href="contact.php">Contact</p></button>
         <button class="header-btn"><p class="header-main-page" id ="connexion-btn">Connexion</p></button>
+        <button class="create"><a class="create-text" id="create" href="create.php">Créer un stage</a></button>
         <button class="account" id="account">
             <dotlottie-player src="https://lottie.host/72051f11-46f8-47cb-b094-3ea2924fcfa4/TwtZwgHEif.lottie" 
             background="transparent" speed="0.5" style="width: 50px; height: 50px"  loop autoplay>
@@ -126,35 +175,29 @@
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
-        <div class="offers-container">
-            <h1 class="offers-title">Offres de Stages</h1>
+    <div class="offers-container">
+        <h1 class="offers-title">Offres de Stages</h1>
 
-            <!-- Liste des offres de stages -->
-            <div class="offer">
-                <h2>Stage en Développement Web</h2>
-                <p><strong>Entreprise :</strong> TechCorp</p>
-                <p><strong>Lieu :</strong> Paris</p>
-                <p><strong>Description :</strong> Nous recherchons un stagiaire pour participer au développement de nos applications web.</p>
-                <button class="button-86" role="button">Postuler</button>
-            </div>
+        <?php
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo '<div class="offer">';
+                echo '<h2>' . htmlspecialchars($row["titre"]) . '</h2>';
+                echo '<p><strong>Filière :</strong> ' . htmlspecialchars($row["filiere"]) . '</p>';
+                echo '<p><strong>Date :</strong> ' . htmlspecialchars($row["date_parution"]) . '</p>';
+                echo '<p><strong>Description :</strong> ' . htmlspecialchars($row["description"]) . '</p>';
+                echo '<button class="button-86" role="button">Postuler</button>';
+                echo '</div>';
+            }
+        } else {
+            echo '<p>Aucune offre de stage disponible.</p>';
+        }
 
-            <div class="offer">
-                <h2>Stage en Marketing Digital</h2>
-                <p><strong>Entreprise :</strong> MarketPro</p>
-                <p><strong>Lieu :</strong> Lyon</p>
-                <p><strong>Description :</strong> Aidez-nous à créer des campagnes publicitaires innovantes.</p>
-                <button class="button-86" role="button">Postuler</button>
-            </div>
-
-            <div class="offer">
-                <h2>Stage en Data Science</h2>
-                <p><strong>Entreprise :</strong> DataX</p>
-                <p><strong>Lieu :</strong> Bordeaux</p>
-                <p><strong>Description :</strong> Participez à des projets d'analyse de données et de machine learning.</p>
-                <button class="button-86" role="button">Postuler</button>
-            </div>
-        </div>
-    </main>
+        // Fermer la connexion
+        $conn->close();
+        ?>
+    </div>
+</main>
     <footer>
         <p>&copy; 2025 ADALG. Tous droits réservés.</p>
     </footer>

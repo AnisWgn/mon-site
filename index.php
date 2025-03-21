@@ -51,27 +51,6 @@
                 <p>Le site ADALG est né de la "semaine de challenge" organisée par notre lycée.</p>
                 <p>Il a pour but de créer un espace d'interconnection entre étudiants en recherche de stage et entreprises en recherhce de stagiaires tout cela sous la suppervision de professeurs.</p>
             </div>
-            <div class="stat">
-<<<<<<< HEAD
-                <h1>Statistiques</h1>
-                    <div class="statistic">
-                        <div class="stat-div">
-                            <h1>Nombre d'utilisateurs:</h1>
-                            <p class="number"><span id="database-size">0</span></p>
-                        </div>
-                        <div class="stat-div">
-                            <h1>Nombre de professeurs:</h1>
-                            <p class="number"><span id="database">0</span></p>
-                        </div>
-                        <div class="stat-div">
-                            <h1>Nombre d'entreprises:</h1>
-                            <p class="number"><span id="database2">0</span></p>
-                        </div>
-                    </div>
-=======
-                
->>>>>>> 7514b50f91a29077be0209eac86eb56336702932
-            </div>
         </div>
     </main>
     <footer>

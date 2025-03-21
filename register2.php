@@ -9,16 +9,10 @@ if ($conn->connect_error) {
 
 // Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Nettoyer et valider les entrées
-<<<<<<< HEAD
-    $username = trim($_POST["name"]);
-    $email = trim($_POST["email"]);
-    $etablissement = trim($_POST["etablissement"]);
-=======
+
     $username = trim($_POST["prof-name"]);
     $email = trim($_POST["email"]);
     $etablissement = trim($_POST["Etablissement"]);
->>>>>>> 7514b50f91a29077be0209eac86eb56336702932
     $password = $_POST["password"];
 
     // Valider les champs obligatoires
@@ -48,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
     } else {
         // Insérer l'utilisateur dans la base de données
-        $stmt = $conn->prepare("INSERT INTO prof (nom, email, etablissement, mot_de_passe) VALUES (?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO prof (nom, email, établissement, mot_de_passe) VALUES (?, ?, ?, ?)");
         if (!$stmt) {
             die("Erreur de préparation de la requête : " . $conn->error);
         }
@@ -63,6 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Erreur lors de la création du compte : " . $stmt->error;
         }
         $stmt->close();
+
+        
     }
 }
 

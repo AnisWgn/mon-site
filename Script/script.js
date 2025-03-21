@@ -1,20 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
     const modeBtn = document.getElementById("mode-btn");
-    const themes = ["light", "dark"]; // List of available themes
-    let currentThemeIndex = localStorage.getItem('themeIndex') || 0; // Default to the first theme
+    const themes = ["light", "dark"]; // Liste des thèmes disponibles
+    let currentThemeIndex = localStorage.getItem('themeIndex') || 0; // Index du thème actuel
 
-    // Set the initial theme
+    // Application du thème initial
     setTheme(themes[currentThemeIndex]);
 
     modeBtn.addEventListener("click", () => {
-        // Cycle to the next theme
+
         currentThemeIndex = (currentThemeIndex + 1) % themes.length;
         const newTheme = themes[currentThemeIndex];
         
-        // Apply the new theme
         setTheme(newTheme);
         
-        // Save the current theme index to localStorage
         localStorage.setItem('themeIndex', currentThemeIndex);
     });
 
@@ -41,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         { id: "connexion-btn", url: "Page_De_Connexion.php" },
         { id: "inscription-btn", url: "Page_Inscription.html" },
         { id: "account", url: "option_profile.php" },
+        { id: "create", url: "create.php"},
         { id: "forgot-password", url: "Mot_de_Passe_oublié.html" }
     ];
 

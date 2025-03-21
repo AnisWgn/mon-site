@@ -18,12 +18,29 @@
             transition: box-shadow 0.5s ease-in-out;
             opacity: 1; /* Empêche toute réduction d'opacité */
             color: var(--header-page-text-color);
-            box-shadow:0px 2px 0px 0px var(--header-page-hover-box-shadow);
         }
 
             .header-main-page{
             box-shadow:none;
         }
+
+        .main{
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top:5%;
+            box-shadow: var(--login-container-box-shadow);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 15px;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+
 </style>
     <header>
         <button class="header-btn"><img src="image/logo.png" alt="Logo" class="logo" id ="hub-btn"></button>
@@ -39,5 +56,38 @@
     </header>
     
     <div class="create-container">
+        <div class="main">
+            <h1>Création de stage</h1>
+            <form action="create2.php" method="POST">
+                <div id="div1" class="content">
+                    <div class="input-group">
+                        <label for="user-name"><strong>Titre</strong></label>
+                        <input type="text" id="user-name" name="titre" placeholder="Nom" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="user-email"><strong>Date</strong></label>
+                        <input type="date" id="user-email" name="date" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="user-password"><strong>Description:</strong></label>
+                        <input type="text" id="user-password" name="description" placeholder="Mot de passe" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="user-password"><strong>Type</strong></label>
+                        <input type="text" id="user-password" name="type" placeholder="Mot de passe" required>
+                    </div>  
+
+                    <div>
+                        <input type="checkbox" id="user-confirmation" name="confirmation" checked />
+                        <label for="user-confirmation" class="checkbox-label">En créant ce stage vous acceptez notre <a href="Politique_D'utilisation.html" target="_blank"><strong>politique d'utilisation</strong></a>, notre <a href="Politique_de_confidentialité.html" target="_blank"><strong>politique de confidentialité</strong></a> ainsi que notre <a href="Charte_d'utilisation.html" target="_blank"><strong>charte d'utilisation</strong></a></label>
+                    </div>
+
+                    <button type="submit" class="login-btn">Créer</button>
+                </div>
+            </form>
+        </div>
         
     </div>

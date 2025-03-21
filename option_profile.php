@@ -1,11 +1,11 @@
-<?php //ceci est un php
+<?php
 session_start();
 
+// Vérifiez si l'utilisateur est connecté
 if (!isset($_SESSION['username'])) {
     header("Location: Page_De_Connexion.php");
     exit();
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +37,7 @@ if (!isset($_SESSION['username'])) {
         <button id ="mode-btn" class="mode" >Mode 🌚</button>
     </header>
     <main>
+        <p></p>
         <div class="login-container">
             <h1 class="login-title">Modification du compte</h1>
             <form  action="register.php" method="POST">
@@ -61,6 +62,8 @@ if (!isset($_SESSION['username'])) {
                 </div>
 
                 <button type="submit" class="login-btn">Valider les modifications</button>
+
+                <a href="logout.php" class="input-btn">Se deconnecter</a>
             </form>
         </div>
     </main>

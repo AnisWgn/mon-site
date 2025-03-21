@@ -1,11 +1,46 @@
 <?php
 session_start();
 
+// Vérifiez si l'utilisateur est connecté
 if (!isset($_SESSION['username'])) {
     header("Location: Page_De_Connexion.php");
     exit();
 }
 
+// Connexion à la base de données
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "adalg";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Vérifiez la connexion
+if ($conn->connect_error) {
+    die("La connexion a échoué : " . $conn->connect_error);
+}
+
+// Récupérez le nom d'utilisateur de la session
+$username = $_SESSION['username'];
+
+// Requête pour vérifier si l'utilisateur appartient à la table spécifique
+$sql = "SELECT * FROM entreprises WHERE username = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("s", $username);
+$stmt->execute();
+$result = $stmt->get_result();
+
+// Si l'utilisateur n'est pas dans la table spécifique, redirigez-le
+if ($result->num_rows == 0) {
+    header("Location: Page_De_Connexion.php");
+    exit();
+}
+
+// Fermez la connexion
+$stmt->close();
+$conn->close();
+
+// Si l'utilisateur est dans la table spécifique, continuez à afficher la page
 ?>
 <!DOCTYPE html>
 <html lang="fr">

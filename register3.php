@@ -10,10 +10,10 @@ if ($conn->connect_error) {
 // Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Nettoyer et valider les entrées
-    $username = trim($_POST["nom"]);
+    $username = trim($_POST["company-nom"]);
     $email = trim($_POST["email"]);
-    $etablissement = trim($_POST["etablissement"]);
-    $password = $_POST["mot_de_passe"];
+    $etablissement = trim($_POST["SIREN"]);
+    $password = $_POST["password"];
 
     // Valider les champs obligatoires
     if (empty($username) || empty($email) || empty($etablissement) || empty($password)) {
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->close();
     } else {
         // Insérer l'utilisateur dans la base de données
-        $stmt = $conn->prepare("INSERT INTO prof (nom, email, etablissement, mot_de_passe) VALUES (?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO prof (nom, email, SIREN, mot_de_passe) VALUES (?, ?, ?, ?)");
         if (!$stmt) {
             die("Erreur de préparation de la requête : " . $conn->error);
         }
